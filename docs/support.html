@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health2You Support</title>
+  <meta name="description" content="Health2You support information by Chips Studio.">
+  <style>
+    :root { color-scheme: light dark; --accent: #7b61ff; --text: #171722; --muted: #626575; --card: #ffffff; --bg: #f7f7fb; }
+    @media (prefers-color-scheme: dark) { :root { --text: #f4f4f8; --muted: #b8bac8; --card: #171724; --bg: #090912; } }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    main { max-width: 800px; margin: 0 auto; padding: 36px 20px 64px; }
+    article { background: var(--card); border: 1px solid rgba(128,128,160,.18); border-radius: 24px; padding: clamp(22px, 5vw, 40px); box-shadow: 0 18px 50px rgba(0,0,0,.08); }
+    h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.08; margin: 0 0 8px; letter-spacing: -0.04em; }
+    h2 { margin-top: 34px; line-height: 1.2; }
+    h3 { margin-top: 24px; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 28px; }
+    .nav { margin-bottom: 18px; }
+    footer { color: var(--muted); font-size: .92rem; margin-top: 24px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="nav"><a href="index.html">← Health2You legal home</a></div>
+    <article>
+      <h1>Health2You Support</h1>
+      <p class="meta">Chips Studio · Last updated: 2026-08-20</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hideinicloud@icloud.com">hideinicloud@icloud.com</a></p>
+
+      <h2>Important Links</h2>
+      <ul>
+        <li><a href="privacy.html">Health2You Privacy Policy</a></li>
+        <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>What is Health2You?</h3>
+      <p>Health2You is a wellness app that helps you observe sleep rhythm, recovery context, and daily lifestyle patterns from on-device Apple Health summaries.</p>
+
+      <h3>Is Health2You a medical app?</h3>
+      <p>No. Health2You is not a medical device and does not provide medical advice, diagnosis, treatment, medication, supplement, or melatonin recommendations.</p>
+
+      <h3>Does Health2You upload my Apple Health data?</h3>
+      <p>No. Health2You reads Apple Health data on device after permission is granted. Raw HealthKit samples are not uploaded to Chips Studio.</p>
+
+      <h3>Do I need an Apple Watch?</h3>
+      <p>No. Health2You can use compatible sleep records already written to Apple Health. The companion Watch app and complication add wrist access when an Apple Watch is available.</p>
+
+      <h3>Why do I see insufficient data?</h3>
+      <p>Health2You needs readable Apple Health sleep records and related metrics. If your device has no sleep records, if permission is denied, or if a metric is unavailable on your iOS version/device, the app shows an insufficient-data or unavailable state.</p>
+
+      <h3>How do I restore Pro?</h3>
+      <p>Open the paywall and tap <strong>Restore Purchases</strong>. This asks StoreKit to refresh your entitlement state.</p>
+
+      <h3>What does Pro include?</h3>
+      <p>Pro currently includes the implemented 90-day deep-trend view. Report generation, complete local report history, report deletion, report export, the Watch app, and the complication are not Pro-only benefits.</p>
+
+      <h3>Can I keep and export reports without Pro?</h3>
+      <p>Yes. Free users can save and browse complete local history, open or delete any saved report, and export any selected history item as Markdown or native PDF. The latest-report export center supports Markdown, PDF, JSON, and CSV; date-range sleep export supports CSV and JSON for 7/30/90/180-day windows. If Pro expires or is revoked, saved reports remain visible and exportable.</p>
+
+      <h3>When is the daily report generated?</h3>
+      <p>The first eligible launch or foreground of a local calendar day starts a non-blocking attempt through the same on-device generation pipeline used by manual reports. Health2You stores local attempt/success timestamps plus matching <code>yyyy-MM-dd</code> local civil-day identifiers computed with the calendar/timezone active when each event occurs. The identifiers contain no location or timezone name; they keep an old marker from being reinterpreted as today's after relaunch or travel, while the timestamps support the retry cooldown. A successful automatic report—or an existing successful manual report whose analysis end falls on today—satisfies today's freshness and prevents an automatic duplicate. Permission denial, unavailable data, or failure does not block launch and may retry after a 30-minute cooldown. Manual Generate/Refresh itself remains unrestricted.</p>
+
+      <h3>Will I receive a free trial?</h3>
+      <p>An introductory trial appears only when the selected App Store product includes a free introductory offer and your Apple Account is eligible. If StoreKit does not return an eligible offer, Health2You does not promise a trial.</p>
+
+      <h3>Are Watch battery reminders real-time?</h3>
+      <p>No. Optional Watch battery reminders are low-frequency and best-effort. Notification permission, Focus, connectivity, mirroring, and system scheduling can affect delivery.</p>
+
+      <h2>Troubleshooting</h2>
+      <ol>
+        <li><strong>Health permissions:</strong> Open Apple Health permissions for Health2You and confirm the requested read permissions are enabled.</li>
+        <li><strong>Generate report:</strong> Confirm Apple Health contains sleep records for the selected range, then return to Health2You and tap Generate Report again.</li>
+        <li><strong>Restore Purchases:</strong> If Pro status does not update, open the paywall and tap Restore Purchases.</li>
+        <li><strong>Export issues:</strong> Generate a report first, then retry the format available for that report. Pro is not required for report export.</li>
+      </ol>
+    </article>
+    <footer>© 2026 Chips Studio</footer>
+  </main>
+</body>
+</html>
