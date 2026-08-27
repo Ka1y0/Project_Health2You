@@ -4,7 +4,7 @@
 
 ## Current status
 
-This repository is being formed gradually. Its initial public content is the Health2You Legal & Support site migrated from `health2you_legal`; no Health2You algorithm implementation or production application source is included in this initial release.
+This repository is being formed gradually. Its initial public content is the Health2You Legal & Support site migrated from the retired legacy Legal repository; no Health2You algorithm implementation or production application source is included in this initial release.
 
 This repository is **not** a publication of the complete Health2You production app. The presence of design notes or selected implementation work here should not be interpreted as making unreleased application source public.
 
@@ -15,7 +15,7 @@ This repository is **not** a publication of the complete Health2You production a
 - Privacy Policy: <https://ka1y0.github.io/Project_Health2You/privacy.html>
 - Support: <https://ka1y0.github.io/Project_Health2You/support.html>
 
-The former [`health2you_legal`](https://github.com/Ka1y0/health2you_legal) repository remains available during the migration period, but the URLs above are the new canonical locations after deployment validation.
+The legacy Legal repository and its Pages site were retired on 2026-08-27 after deployment validation. The URLs above are the sole canonical public locations.
 
 ## Repository layout
 
