@@ -25,7 +25,7 @@
     <div class="nav"><a href="index.html">← Health2You legal home</a></div>
     <article>
       <h1>Health2You Privacy Policy</h1>
-      <p class="meta">Chips Studio · Last updated: 2026-08-20</p>
+      <p class="meta">Chips Studio · Last updated: 2026-09-06</p>
 
       <p>Health2You is designed as a local-first wellness app. This policy describes what data the app uses and what is not collected by Chips Studio.</p>
 
@@ -36,9 +36,9 @@
       <h2>Settings and Profile Information</h2>
       <p>Preferences and optional profile information you enter—such as display name, app mode, language, appearance, reminder choices, height, weight, age, health goal, and sleep targets—are stored in app-managed local storage. They are used to personalize on-device presentation and calculations. The current app code does not send them to a Chips Studio server.</p>
 
-      <h2>Local Reports and Automatic Generation</h2>
+      <h2>Local Reports and Live Refresh</h2>
       <p>Successful reports are saved as derived summaries in the app's Application Support container so the latest report and report history can be reopened after relaunch. These summaries do not contain raw HealthKit sample arrays, raw sleep segments, HealthKit source names, or raw category values. Reports are not silently evicted because of a count limit; you can delete individual reports or clear the history in the app.</p>
-      <p>On the first eligible launch or foreground of a local calendar day, Health2You can attempt to generate that day's report using the existing on-device report pipeline. It stores local <code>lastAttempt</code> and <code>lastSuccess</code> timestamps together with matching attempt/success local civil-day identifiers. The timestamps support the 30-minute failure cooldown. Each identifier stores only the <code>yyyy-MM-dd</code> civil-day value computed with the calendar/timezone active when the event occurred; it does not store a location or timezone name. A successful automatic report—or an existing successful manual report whose analysis end falls on today—satisfies today's freshness and suppresses an automatic duplicate. Permission denial, unavailable data, or failure may retry after the cooldown. Manual report generation remains unrestricted and is not replaced by this process.</p>
+      <p>In Health2You 1.2.2, a new formal report is saved to the latest-report snapshot and report history only after you explicitly choose Generate Report and generation succeeds. Launch, foreground, range, data-mode, day, timezone, and freshness refreshes can update live Apple Health views and Watch context, but do not create saved reports or replace the formal report used for export. Restoring a saved report after relaunch does not add another history entry. Existing saved reports are preserved when upgrading.</p>
       <p>Report access is not tied to subscription status. Expiration or revocation of Pro does not hide or delete locally saved reports and does not disable report export. Deleting an individual history item or clearing history removes those archived entries; the separate clear-latest control removes the latest snapshot. None of these controls deletes or changes data in Apple Health.</p>
 
       <h2>Report Exports</h2>
